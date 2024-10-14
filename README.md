@@ -1,6 +1,9 @@
 # Smart Hospital
 
 ![Structure of Robot](https://github.com/Abyaneh/Smart_Hospital/blob/main/Robotic%20movie%20and%20photos/Structure%20of%20Robot.png)
+![Voice assistant and easy to use in the bot](https://github.com/Abyaneh/Smart_Hospital/blob/main/Robotic%20movie%20and%20photos/Voice%20assistant%20and%20easy%20to%20use%20in%20the%20bot.png)
+
+
 
 ## Table of Contents
 - [Introduction](#introduction)

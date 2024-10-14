@@ -1,4 +1,4 @@
-# Autonomous Robot Navigation and Object Detection
+# Smart Hospital
 
 ![Project Overview](insert_image_here.png)
 

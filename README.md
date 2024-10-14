@@ -37,7 +37,7 @@ This project, developed as part of an introductory robotics course, is an advanc
 ### Image Processing Layer
 As part of the Image Processing Group, I contributed to developing the robot's vision system. Here's a detailed breakdown of the steps we followed:
 
-[Back to Top](#table-of-contents)
+
 #### Steps:
 1. **Preparation of Images**: We captured digital images using a camera mounted on the robot.
 2. **Image Editing**: Modifications were applied to the images to prepare them for processing.
@@ -48,18 +48,18 @@ As part of the Image Processing Group, I contributed to developing the robot's v
 7. **Image Segmentation**: Split images into segments to isolate areas of interest (e.g., black path line).
 8. **Object Detection**: Implemented using YOLO and OpenCV to detect and classify objects such as patients, beds, and medical equipment.
 
-[Back to Top](#table-of-contents)
+
 #### Object Detection in Hallways:
 We used **Aruco markers** to assist in object localization, which helped guide the robot. The markers provide accurate tracking and orientation feedback, making them ideal for high-speed real-time applications.
 
-[Back to Top](#table-of-contents)
+
 ##### Challenges:
 - Managing image processing at high speeds caused the robot to veer due to speed discrepancies between motors.
 - Tuning the PID controller to adjust motor speeds based on real-time feedback.
 
 ---
 
-[Back to Top](#table-of-contents)
+
 ### My Dataset
 For the object detection system, we used a custom dataset created using labeled images of hospital objects (e.g., wheelchairs, patients). The dataset was processed using Roboflow to train our YOLO model.
 
@@ -67,7 +67,7 @@ For the object detection system, we used a custom dataset created using labeled 
 
 [Back to Top](#table-of-contents)
 ## Technologies & Tools Used
-- **OpenCV**: For image processing and path following.
+- **OpenCV**: This is for image processing and path following.
 - **Python**: Core language for implementing algorithms.
 - **YOLOv5**: Object detection.
 - **Arduino IDE**: To program the robot's control system.

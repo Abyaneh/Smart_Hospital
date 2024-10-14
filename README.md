@@ -78,4 +78,17 @@ For the object detection system, we used a custom dataset created using labeled 
 ## How to Run the Project
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Abyaneh/AutonomousRobot.git
+   git clone https://github.com/Abyaneh/Smart_Hospital/blob/main/README.md#how-to-run-the-project
+   ```
+2. Install the required dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+3. Install the dependencies:
+    ```bash
+    python main.py
+    ```
+4. Ensure the robot is connected to your computer or microcontroller before running the code.
+
+
+    

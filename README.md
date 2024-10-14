@@ -114,8 +114,8 @@ For the object detection system, we used Aruco markers to accurately detect and 
 - **Image Processing Group:** Mohammad Maleki Abyaneh, Mr. Aghazadeh, Mr. Elmi, Mr. Ghaffarzadeh, Mr. Sharifi
 - **Curtain and Smart Light Group:** Ms. Faraji, Ms. Gol Nabi
 - **Chassis Design Group:** Messrs. Rahi Sharafi, Nalbandian
-- **Voice Assistant Group:** Reward, Guidance Gentlemen
-- **Motor Team:** Mr. Reward, Mr. Samieinia
+- **Voice Assistant Group:** Pdash and Ershad
+- **Motor Team:** Mr. Padash, Mr. Samieinia
 
 
 ![Image Processing Group](https://github.com/Abyaneh/Smart_Hospital/blob/main/Robotic%20movie%20and%20photos/Image%20Processing%20Group.png)

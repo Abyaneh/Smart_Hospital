@@ -109,6 +109,9 @@ For the object detection system, we used a custom dataset created using labeled 
 - **Voice Assistant Group:** Reward, Guidance Gentlemen
 - **Motor Team:** Mr. Reward, Mr. Samieinia
 
+[Image Processing Group](https://github.com/Abyaneh/Smart_Hospital/blob/main/Robotic%20movie%20and%20photos/Image%20Processing%20Group.png)
+
+
 [Back to Top](#table-of-contents)
 ## Contributing
 Contributions are welcome! To contribute:

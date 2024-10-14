@@ -13,6 +13,7 @@
 - [Features](#features)
 - [Project Layers](#project-layers)
   - [Image Processing Layer](#image-processing-layer)
+  - [My Dataset](#my-dataset)
 - [Technologies & Tools Used](#technologies--tools-used)
 - [Video Demonstration](#video-demonstration)
 - [How to Run the Project](#how-to-run-the-project)
@@ -30,6 +31,7 @@ This project, developed as part of an introductory robotics course, is an advanc
 [Back to Top](#table-of-contents)
 ## Features
 - **Line Following**: The robot follows a black line on the ground using a camera and image processing.
+- **Object Detection**: The robot uses Aruco markers and OpenCV to detect and track objects (e.g., patients, beds, and medical equipment) in its vicinity.
 - **Smart Curtain Control**: Adjusts room lighting and curtains based on environmental conditions.
 - **Voice Assistant**: Interacts with patients by asking health-related questions.
 ---
@@ -61,11 +63,21 @@ We used **Aruco markers** to assist in object localization, which helped guide t
 - Tuning the PID controller to adjust motor speeds based on real-time feedback.
 
 
+---
+
+### My Dataset
+For the object detection system, we used Aruco markers to accurately detect and locate hospital objects (e.g., wheelchairs, and patients). This method provided reliable and efficient object tracking without the need for large datasets.
+
+---
+
+
+
 
 [Back to Top](#table-of-contents)
 ## Technologies & Tools Used
 - **OpenCV**: This is for image processing and path following.
 - **Python**: Core language for implementing algorithms.
+- **Aruco Markers**: Object detection and tracking.
 - **Arduino IDE**: To program the robot's control system.
 - **ESP32**: Microcontroller used for communication and sensor data.
 

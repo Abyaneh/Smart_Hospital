@@ -1,6 +1,12 @@
 # Smart Hospital
 
-![Structure of Robot](https://github.com/Abyaneh/Smart_Hospital/blob/main/Robotic%20movie%20and%20photos/Structure%20of%20Robot.png)
+
+<p align="center">
+  <img src="https://github.com/Abyaneh/Smart_Hospital/blob/main/Robotic%20movie%20and%20photos/Structure%20of%20Robot.png" alt="Final_Assembled_Device" width="400"/>
+  <img src="https://github.com/Abyaneh/Smart_Hospital/blob/main/Robotic%20movie%20and%20photos/Voice%20assistant%20and%20easy%20to%20use%20in%20the%20bot.png" alt="Final_Assembled_Device" width="400"/>
+</p>
+
+
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -24,11 +30,10 @@ This project, developed as part of an introductory robotics course, is an advanc
 
 [Back to Top](#table-of-contents)
 ## Features
-- **Line Following and Obstacle Detection**: The robot follows a black line on the ground using a camera and image processing.
-- **Object Detection**: The robot uses YOLO to classify objects (e.g., humans, machines) in its vicinity.
+- **Line Following**: The robot follows a black line on the ground using a camera and image processing.
+- **Object Detection**: The robot uses Aruco markers and OpenCV to detect and track objects (e.g., patients, beds, and medical equipment) in its vicinity.
 - **Smart Curtain Control**: Adjusts room lighting and curtains based on environmental conditions.
 - **Voice Assistant**: Interacts with patients by asking health-related questions.
-
 ---
 
 [Back to Top](#table-of-contents)
@@ -46,7 +51,7 @@ As part of the Image Processing Group, I contributed to developing the robot's v
 5. **Multi-Resolution Processing**: Used to compress large images (e.g., satellite) for real-time use.
 6. **Image Compression**: Reduced the image size for faster processing.
 7. **Image Segmentation**: Split images into segments to isolate areas of interest (e.g., black path line).
-8. **Object Detection**: Implemented using YOLO and OpenCV to detect and classify objects such as patients, beds, and medical equipment.
+8. **Object Detection**: Implemented using Aruco markers and OpenCV to detect and classify objects such as patients, beds, and medical equipment.
 
 [Back to Top](#table-of-contents)
 #### Object Detection in Hallways:
@@ -57,19 +62,22 @@ We used **Aruco markers** to assist in object localization, which helped guide t
 - Managing image processing at high speeds caused the robot to veer due to speed discrepancies between motors.
 - Tuning the PID controller to adjust motor speeds based on real-time feedback.
 
----
 
+---
 
 ### My Dataset
-For the object detection system, we used a custom dataset created using labeled images of hospital objects (e.g., wheelchairs, patients). The dataset was processed using Roboflow to train our YOLO model.
+For the object detection system, we used Aruco markers to accurately detect and locate hospital objects (e.g., wheelchairs, and patients). This method provided reliable and efficient object tracking without the need for large datasets.
 
 ---
+
+
+
 
 [Back to Top](#table-of-contents)
 ## Technologies & Tools Used
 - **OpenCV**: This is for image processing and path following.
 - **Python**: Core language for implementing algorithms.
-- **YOLOv5**: Object detection.
+- **Aruco Markers**: Object detection and tracking.
 - **Arduino IDE**: To program the robot's control system.
 - **ESP32**: Microcontroller used for communication and sensor data.
 

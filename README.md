@@ -79,7 +79,7 @@ For the object detection system, we used a custom dataset created using labeled 
 ## Video Demonstration
 ![Video Demo](insert_video_here.gif)
 
-[Click here to watch the full video demonstration](link_to_video_here)
+[Click here to watch the full video demonstration](https://github.com/Abyaneh/Smart_Hospital/blob/main/Robotic%20movie%20and%20photos/functionality_1.mp4)
 
 ---
 

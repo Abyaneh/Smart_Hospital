@@ -48,7 +48,7 @@ As part of the Image Processing Group, I contributed to developing the robot's v
 7. **Image Segmentation**: Split images into segments to isolate areas of interest (e.g., black path line).
 8. **Object Detection**: Implemented using YOLO and OpenCV to detect and classify objects such as patients, beds, and medical equipment.
 
-
+[Back to Top](#table-of-contents)
 #### Object Detection in Hallways:
 We used **Aruco markers** to assist in object localization, which helped guide the robot. The markers provide accurate tracking and orientation feedback, making them ideal for high-speed real-time applications.
 

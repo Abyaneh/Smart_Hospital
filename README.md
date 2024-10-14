@@ -1,6 +1,6 @@
 # Smart Hospital
 
-![Project Overview](insert_image_here.png)
+![Structure of Robot](https://github.com/Abyaneh/Smart_Hospital/blob/main/Robotic%20movie%20and%20photos/Structure%20of%20Robot.png)
 
 ## Table of Contents
 - [Introduction](#introduction)

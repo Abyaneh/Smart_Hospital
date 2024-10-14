@@ -13,7 +13,6 @@
 - [Features](#features)
 - [Project Layers](#project-layers)
   - [Image Processing Layer](#image-processing-layer)
-  - [My Dataset](#my-dataset)
 - [Technologies & Tools Used](#technologies--tools-used)
 - [Video Demonstration](#video-demonstration)
 - [How to Run the Project](#how-to-run-the-project)
@@ -63,19 +62,12 @@ We used **Aruco markers** to assist in object localization, which helped guide t
 - Managing image processing at high speeds caused the robot to veer due to speed discrepancies between motors.
 - Tuning the PID controller to adjust motor speeds based on real-time feedback.
 
----
 
-
-### My Dataset
-For the object detection system, we used a custom dataset created using labeled images of hospital objects (e.g., wheelchairs, patients). The dataset was processed using Roboflow to train our YOLO model.
-
----
 
 [Back to Top](#table-of-contents)
 ## Technologies & Tools Used
 - **OpenCV**: This is for image processing and path following.
 - **Python**: Core language for implementing algorithms.
-- **YOLOv5**: Object detection.
 - **Arduino IDE**: To program the robot's control system.
 - **ESP32**: Microcontroller used for communication and sensor data.
 

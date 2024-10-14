@@ -29,11 +29,9 @@ This project, developed as part of an introductory robotics course, is an advanc
 
 [Back to Top](#table-of-contents)
 ## Features
-- **Line Following and Obstacle Detection**: The robot follows a black line on the ground using a camera and image processing.
-- **Object Detection**: The robot uses YOLO to classify objects (e.g., humans, machines) in its vicinity.
+- **Line Following**: The robot follows a black line on the ground using a camera and image processing.
 - **Smart Curtain Control**: Adjusts room lighting and curtains based on environmental conditions.
 - **Voice Assistant**: Interacts with patients by asking health-related questions.
-
 ---
 
 [Back to Top](#table-of-contents)
@@ -51,7 +49,6 @@ As part of the Image Processing Group, I contributed to developing the robot's v
 5. **Multi-Resolution Processing**: Used to compress large images (e.g., satellite) for real-time use.
 6. **Image Compression**: Reduced the image size for faster processing.
 7. **Image Segmentation**: Split images into segments to isolate areas of interest (e.g., black path line).
-8. **Object Detection**: Implemented using YOLO and OpenCV to detect and classify objects such as patients, beds, and medical equipment.
 
 [Back to Top](#table-of-contents)
 #### Object Detection in Hallways:

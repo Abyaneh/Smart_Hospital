@@ -13,7 +13,6 @@
 - [Features](#features)
 - [Project Layers](#project-layers)
   - [Image Processing Layer](#image-processing-layer)
-  - [My Dataset](#my-dataset)
 - [Technologies & Tools Used](#technologies--tools-used)
 - [Video Demonstration](#video-demonstration)
 - [How to Run the Project](#how-to-run-the-project)

@@ -14,6 +14,7 @@
 - [Project Layers](#project-layers)
   - [Image Processing Layer](#image-processing-layer)
      - [Image Processing in Room](#image-processing-in-room)
+     - [Object Detection in Hallways](#object-detection-in-hallways)
 - [Technologies & Tools Used](#technologies--tools-used)
 - [Video Demonstration](#video-demonstration)
 - [How to Run the Project](#how-to-run-the-project)

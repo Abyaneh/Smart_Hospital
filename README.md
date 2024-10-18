@@ -13,7 +13,8 @@
 - [Features](#features)
 - [Project Layers](#project-layers)
   - [Image Processing Layer](#image-processing-layer)
-  - [My Dataset](#my-dataset)
+     - [Image Processing in Room](#image-processing-in-room)
+     - [Object Detection in Hallways](#object-detection-in-hallways)
 - [Technologies & Tools Used](#technologies--tools-used)
 - [Video Demonstration](#video-demonstration)
 - [How to Run the Project](#how-to-run-the-project)
@@ -24,7 +25,7 @@
 ---
 
 ## Introduction
-This project, developed as part of an introductory robotics course, is an advanced autonomous robot designed to navigate and perform object detection in a hospital environment. Using image processing techniques, the robot follows a path, detects objects such as beds, and interacts with patients through smart functionalities.
+This project, developed as part of an introductory robotics course, is an advanced autonomous robot designed to navigate and perform object detection in a hospital environment. The robot follows a path, detects objects such as beds, and interacts with patients through smart functionalities.
 
 ---
 
@@ -40,18 +41,37 @@ This project, developed as part of an introductory robotics course, is an advanc
 ## Project Layers
 
 ### Image Processing Layer
+
 As part of the Image Processing Group, I contributed to developing the robot's vision system. Here's a detailed breakdown of the steps we followed:
 
+#### Image Processing in Room:
 
 #### Steps:
-1. **Preparation of Images**: We captured digital images using a camera mounted on the robot.
-2. **Image Editing**: Modifications were applied to the images to prepare them for processing.
-3. **Noise Reduction**: We cleaned the images to remove noise, enhancing clarity.
-4. **Color Image Processing**: Performed on both grayscale and RGB images to improve contrast.
-5. **Multi-Resolution Processing**: Used to compress large images (e.g., satellite) for real-time use.
-6. **Image Compression**: Reduced the image size for faster processing.
-7. **Image Segmentation**: Split images into segments to isolate areas of interest (e.g., black path line).
-8. **Object Detection**: Implemented using Aruco markers and OpenCV to detect and classify objects such as patients, beds, and medical equipment.
+1. **Data preparation**:
+- We captured digital images using a camera mounted on the robot, which recorded the live feed as it navigated the environment.
+2. **Data Preprocessing**:
+- Performed noise reduction techniques such as Gaussian blur to remove unwanted noise from the images.
+- Resized the images to a standard resolution for consistent processing.
+- Converted the color images to grayscale and applied a threshold for binary conversion (black and white).
+3. **Image Segmentation**:
+- Segmented areas of interest, particularly the black path line, from the surrounding white background using masking techniques.
+- Applied contour detection to isolate the largest black area, ensuring the robot focused on the correct path.
+  
+4. **Center Line Detection**:
+- Used image moments to calculate the center of the largest detected contour (black path line).
+- Marked this center with a visual white dot to keep track of the robot's alignment with the path.
+5. **Path Adjustment**:
+- Calculated the robot’s required movement by analyzing the position of the center dot relative to the image frame.
+- Defined the "center" range as being between 190 and 290 pixels from the top of the screen (left-right axis in portrait mode).
+- Based on this analysis:
+   - If the center dot was outside this range, instructions were sent to the motors to rotate either left or right.
+   - If the dot was within the center range, the robot continued moving straight.
+6. **Error Calculation**:
+- Computed an error variable based on the deviation of the center dot from the optimal center range.
+- Sent this error data to the PID controller, which adjusted the speed of the motors for smooth turning and movement.
+
+7. **Visualization**:
+- For debugging and real-time tracking, we visualized the contours, mask, and main frame, along with the identification circle representing the detected center.
 
 [Back to Top](#table-of-contents)
 #### Object Detection in Hallways:
@@ -63,33 +83,24 @@ We used **Aruco markers** to assist in object localization, which helped guide t
 - Tuning the PID controller to adjust motor speeds based on real-time feedback.
 
 
----
-
-### My Dataset
-For the object detection system, we used Aruco markers to accurately detect and locate hospital objects (e.g., wheelchairs, and patients). This method provided reliable and efficient object tracking without the need for large datasets.
-
----
-
-
-
-
 [Back to Top](#table-of-contents)
 ## Technologies & Tools Used
-- **OpenCV**: This is for image processing and path following.
-- **Python**: Core language for implementing algorithms.
-- **Aruco Markers**: Object detection and tracking.
-- **Arduino IDE**: To program the robot's control system.
-- **ESP32**: Microcontroller used for communication and sensor data.
+- **OpenCV**: Image processing and path following 
+- **Python**: Core language for implementing algorithms 
+- **Aruco Markers**: Object detection and tracking 
+- **Arduino IDE**: Programming the robot's control system 
+- **ESP32**: Microcontroller used for communication and sensor data
 
 ---
 
 [Back to Top](#table-of-contents)
 ## Video Demonstration
-![Video Demo](insert_video_here.gif)
 
-[Click here to watch the full video 1 demonstration](https://github.com/Abyaneh/Smart_Hospital/blob/main/Robotic%20movie%20and%20photos/functionality_1.mp4)
+#### you can see two videos from the demonstration
 
-[Click here to watch the full video 2 demonstration](https://github.com/Abyaneh/Smart_Hospital/blob/main/Robotic%20movie%20and%20photos/functionality_2.mp4)
+Click [here](https://github.com/Abyaneh/Smart_Hospital/blob/main/Robotic%20movie%20and%20photos/functionality_1.mp4) to watch the full video 1 demonstration
+
+Click [here](https://github.com/Abyaneh/Smart_Hospital/blob/main/Robotic%20movie%20and%20photos/functionality_2.mp4) to watch the full video 2 demonstration
 
 ---
 
@@ -97,25 +108,21 @@ For the object detection system, we used Aruco markers to accurately detect and 
 ## How to Run the Project
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Abyaneh/Smart_Hospital/blob/main/README.md#how-to-run-the-project
+   git clone https://github.com/Abyaneh/Smart_Hospital
    ```
-2. Install the required dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-3. Install the dependencies:
+2. Install the dependencies:
     ```bash
     python main.py
     ```
-4. Ensure the robot is connected to your computer or microcontroller before running the code.
+3. Ensure the robot is connected to your computer or microcontroller before running the code.
 
 [Back to Top](#table-of-contents)
 ## Team Members
-- **Image Processing Group:** Mohammad Maleki Abyaneh, Mr. Aghazadeh, Mr. Elmi, Mr. Ghaffarzadeh, Mr. Sharifi
-- **Curtain and Smart Light Group:** Ms. Faraji, Ms. Gol Nabi
-- **Chassis Design Group:** Messrs. Rahi Sharafi, Nalbandian
+- **Image Processing Group:** Mohammad Maleki Abyaneh, Aghazadeh, Elmi, Ghaffarzadeh, Sharifi
+- **Curtain and Smart Light Group:** Faraji, Gol Nabi
+- **Chassis Design Group:** Rahi Sharafi, Nalbandian
 - **Voice Assistant Group:** Pdash and Ershad
-- **Motor Team:** Mr. Padash, Mr. Samieinia
+- **Motor Team:** Padash, Samieinia
 
 
 ![Image Processing Group](https://github.com/Abyaneh/Smart_Hospital/blob/main/Robotic%20movie%20and%20photos/Image%20Processing%20Group.png)

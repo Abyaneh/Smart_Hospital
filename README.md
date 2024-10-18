@@ -82,6 +82,11 @@ As part of the Image Processing Group, I contributed to developing the robot's v
 #### Object Detection in Hallways:
 We used **Aruco markers** to assist in object localization, which helped guide the robot. The markers provide accurate tracking and orientation feedback, making them ideal for high-speed real-time applications.
 
+##### You can see the Aruco markers detection below:
+
+![Object Detection in Hallways](https://github.com/Abyaneh/Smart_Hospital/blob/main/Robotic%20movie%20and%20photos/Object%20Detection%20in%20Hallways.jpg)
+
+
 
 ##### Challenges:
 - Managing image processing at high speeds caused the robot to veer due to speed discrepancies between motors.

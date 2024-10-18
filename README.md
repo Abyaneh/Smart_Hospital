@@ -59,7 +59,7 @@ As part of the Image Processing Group, I contributed to developing the robot's v
 - Used image moments to calculate the center of the largest detected contour (black path line).
 - Marked this center with a visual white dot to keep track of the robot's alignment with the path.
 5. **Path Adjustment**:
--Calculated the robot’s required movement by analyzing the position of the center dot relative to the image frame.
+- Calculated the robot’s required movement by analyzing the position of the center dot relative to the image frame.
 - Defined the "center" range as being between 190 and 290 pixels from the top of the screen (left-right axis in portrait mode).
 - Based on this analysis:
    - If the center dot was outside this range, instructions were sent to the motors to rotate either left or right.

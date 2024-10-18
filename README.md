@@ -39,18 +39,36 @@ This project, developed as part of an introductory robotics course, is an advanc
 ## Project Layers
 
 ### Image Processing Layer
+
 As part of the Image Processing Group, I contributed to developing the robot's vision system. Here's a detailed breakdown of the steps we followed:
 
+#### Image Processing in Room:
 
 #### Steps:
-1. **Preparation of Images**: We captured digital images using a camera mounted on the robot.
-2. **Image Editing**: Modifications were applied to the images to prepare them for processing.
-3. **Noise Reduction**: We cleaned the images to remove noise, enhancing clarity.
-4. **Color Image Processing**: Performed on both grayscale and RGB images to improve contrast.
-5. **Multi-Resolution Processing**: Used to compress large images (e.g., satellite) for real-time use.
-6. **Image Compression**: Reduced the image size for faster processing.
-7. **Image Segmentation**: Split images into segments to isolate areas of interest (e.g., black path line).
-8. **Object Detection**: Implemented using Aruco markers and OpenCV to detect and classify objects such as patients, beds, and medical equipment.
+1. **Data preparation**: We captured digital images using a camera mounted on the robot, which recorded the live feed as it navigated the environment.
+2. **Data Preprocessing**:
+- Performed noise reduction techniques such as Gaussian blur to remove unwanted noise from the images.
+- Resized the images to a standard resolution for consistent processing.
+- Converted the color images to grayscale and applied a threshold for binary conversion (black and white).
+3. **Image Segmentation**:
+- Segmented areas of interest, particularly the black path line, from the surrounding white background using masking techniques.
+- Applied contour detection to isolate the largest black area, ensuring the robot focused on the correct path.
+  
+4. Center Line Detection:
+- Used image moments to calculate the center of the largest detected contour (black path line).
+- Marked this center with a visual white dot to keep track of the robot's alignment with the path.
+5. Path Adjustment:
+-Calculated the robot’s required movement by analyzing the position of the center dot relative to the image frame.
+- Defined the "center" range as being between 190 and 290 pixels from the top of the screen (left-right axis in portrait mode).
+- Based on this analysis:
+   - If the center dot was outside this range, instructions were sent to the motors to rotate either left or right.
+   - If the dot was within the center range, the robot continued moving straight.
+6. Error Calculation:
+- Computed an error variable based on the deviation of the center dot from the optimal center range.
+- Sent this error data to the PID controller, which adjusted the speed of the motors for smooth turning and movement.
+
+7. Visualization:
+- For debugging and real-time tracking, we visualized the contours, mask, and main frame, along with the identification circle representing the detected center.
 
 [Back to Top](#table-of-contents)
 #### Object Detection in Hallways:

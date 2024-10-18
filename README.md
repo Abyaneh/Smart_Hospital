@@ -82,6 +82,11 @@ As part of the Image Processing Group, I contributed to developing the robot's v
 #### Object Detection in Hallways:
 We used **Aruco markers** to assist in object localization, which helped guide the robot. The markers provide accurate tracking and orientation feedback, making them ideal for high-speed real-time applications.
 
+##### You can see the Aruco markers detection below:
+
+![Object Detection in Hallways](https://github.com/Abyaneh/Smart_Hospital/blob/main/Robotic%20movie%20and%20photos/Object%20Detection%20in%20Hallways.jpg)
+
+
 
 ##### Challenges:
 - Managing image processing at high speeds caused the robot to veer due to speed discrepancies between motors.
@@ -115,11 +120,13 @@ Click [here](https://github.com/Abyaneh/Smart_Hospital/blob/main/Robotic%20movie
    ```bash
    git clone https://github.com/Abyaneh/Smart_Hospital
    ```
-2. Install the dependencies:
-    ```bash
-    python main.py
-    ```
+2. change the directory to code folder cd code
+
 3. Ensure the robot is connected to your computer or microcontroller before running the code.
+4. run the main script:
+   ```bash
+   python main.py
+   ```
 
 [Back to Top](#table-of-contents)
 ## Team Members

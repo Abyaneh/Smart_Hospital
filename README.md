@@ -85,7 +85,8 @@ For the object detection system, we used Aruco markers to accurately detect and 
 
 [Back to Top](#table-of-contents)
 ## Video Demonstration
-![Video Demo](insert_video_here.gif)
+
+#### you can see two videos from the demonstration
 
 Click [here](https://github.com/Abyaneh/Smart_Hospital/blob/main/Robotic%20movie%20and%20photos/functionality_1.mp4) to watch the full video 1 demonstration
 

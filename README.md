@@ -48,7 +48,7 @@ As part of the Image Processing Group, I contributed to developing the robot's v
 
 #### Steps:
 1. **Data preparation**:
-- We captured digital images using a camera mounted on the robot, which recorded the live feed as it navigated the environment.
+-   We captured digital images using a camera mounted on the robot, which recorded the live feed as it navigated the environment.
 2. **Data Preprocessing**:
 - Performed noise reduction techniques such as Gaussian blur to remove unwanted noise from the images.
 - Resized the images to a standard resolution for consistent processing.

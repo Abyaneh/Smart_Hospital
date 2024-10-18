@@ -63,23 +63,13 @@ We used **Aruco markers** to assist in object localization, which helped guide t
 - Tuning the PID controller to adjust motor speeds based on real-time feedback.
 
 
----
-
-### My Dataset
-For the object detection system, we used Aruco markers to accurately detect and locate hospital objects (e.g., wheelchairs, and patients). This method provided reliable and efficient object tracking without the need for large datasets.
-
----
-
-
-
-
 [Back to Top](#table-of-contents)
 ## Technologies & Tools Used
-- **OpenCV**: This is for image processing and path following.
-- **Python**: Core language for implementing algorithms.
-- **Aruco Markers**: Object detection and tracking.
-- **Arduino IDE**: To program the robot's control system.
-- **ESP32**: Microcontroller used for communication and sensor data.
+- **OpenCV**: Image processing and path following 
+- **Python**: Core language for implementing algorithms 
+- **Aruco Markers**: Object detection and tracking 
+- **Arduino IDE**: Programming the robot's control system 
+- **ESP32**: Microcontroller used for communication and sensor data
 
 ---
 
@@ -98,17 +88,13 @@ Click [here](https://github.com/Abyaneh/Smart_Hospital/blob/main/Robotic%20movie
 ## How to Run the Project
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Abyaneh/Smart_Hospital/blob/main/README.md#how-to-run-the-project
+   git clone https://github.com/Abyaneh/Smart_Hospital
    ```
-2. Install the required dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-3. Install the dependencies:
+2. Install the dependencies:
     ```bash
     python main.py
     ```
-4. Ensure the robot is connected to your computer or microcontroller before running the code.
+3. Ensure the robot is connected to your computer or microcontroller before running the code.
 
 [Back to Top](#table-of-contents)
 ## Team Members

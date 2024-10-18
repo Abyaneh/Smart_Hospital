@@ -73,6 +73,9 @@ As part of the Image Processing Group, I contributed to developing the robot's v
 7. **Visualization**:
 - For debugging and real-time tracking, we visualized the contours, mask, and main frame, along with the identification circle representing the detected center.
 
+![Image Processing in Room](https://github.com/Abyaneh/Smart_Hospital/blob/main/Robotic%20movie%20and%20photos/Image%20Processing%20in%20Room.png)
+
+
 [Back to Top](#table-of-contents)
 #### Object Detection in Hallways:
 We used **Aruco markers** to assist in object localization, which helped guide the robot. The markers provide accurate tracking and orientation feedback, making them ideal for high-speed real-time applications.

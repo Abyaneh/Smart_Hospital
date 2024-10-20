@@ -120,7 +120,7 @@ Click [here](https://github.com/Abyaneh/Smart_Hospital/blob/main/Robotic%20movie
    ```bash
    git clone https://github.com/Abyaneh/Smart_Hospital
    ```
-2. change the directory to the code folder.
+2. change the directory to the code folder..
    ```bash
    cd Smart_Hospital/code
    ```

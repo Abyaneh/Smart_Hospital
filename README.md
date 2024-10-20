@@ -120,10 +120,12 @@ Click [here](https://github.com/Abyaneh/Smart_Hospital/blob/main/Robotic%20movie
    ```bash
    git clone https://github.com/Abyaneh/Smart_Hospital
    ```
-2. change the directory to code folder cd code
-
-3. Ensure the robot is connected to your computer or microcontroller before running the code.
-4. run the main script:
+2. change the directory to the code folder.
+  ```bash
+   cd Smart_Hospital/code
+  ```
+4. Ensure the robot is connected to your computer or microcontroller before running the code.
+5. run the main script:
    ```bash
    python main.py
    ```

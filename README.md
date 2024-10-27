@@ -132,11 +132,11 @@ Click [here](https://github.com/Abyaneh/Smart_Hospital/blob/main/Robotic%20movie
 
 [Back to Top](#table-of-contents)
 ## Team Members
-- **Image Processing Group:** Mohammad Maleki Abyaneh, Aghazadeh, Elmi, Ghaffarzadeh, Sharifi
-- **Curtain and Smart Light Group:** Faraji, Gol Nabi
-- **Chassis Design Group:** Rahi Sharafi, Nalbandian
-- **Voice Assistant Group:** Pdash and Ershad
-- **Motor Team:** Padash, Samieinia
+- **Image Processing Group (my group)** 
+- **Curtain and Smart Light Group** 
+- **Chassis Design Group**
+- **Voice Assistant Group**
+- **Motor Team** 
 
 
 ![Image Processing Group](https://github.com/Abyaneh/Smart_Hospital/blob/main/Robotic%20movie%20and%20photos/Image%20Processing%20Group.png)

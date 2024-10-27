@@ -32,7 +32,7 @@ This project, developed as part of an introductory robotics course, is an advanc
 [Back to Top](#table-of-contents)
 ## Features
 - **Line Following**: The robot follows a black line on the ground using a camera and image processing.
-- **Object Detection**: The robot uses Aruco markers and OpenCV to detect and track objects (e.g., patients, beds, and medical equipment) in its vicinity.
+- **Object Detection**: The robot uses Aruco markers and OpenCV to detect and track objects in its vicinity.
 - **Smart Curtain Control**: Adjusts room lighting and curtains based on environmental conditions.
 - **Voice Assistant**: Interacts with patients by asking health-related questions.
 ---

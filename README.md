@@ -25,14 +25,14 @@
 ---
 
 ## Introduction
-This project, developed as part of an introductory robotics course, is an advanced autonomous robot designed to navigate and perform object detection in a hospital environment. The robot follows a path, detects objects such as beds, and interacts with patients through smart functionalities.
+This project, developed as part of an introductory robotics course, is an advanced autonomous robot designed to navigate and perform object detection in a hospital environment. The robot follows a path, detects objects, and interacts with patients through smart functionalities.
 
 ---
 
 [Back to Top](#table-of-contents)
 ## Features
 - **Line Following**: The robot follows a black line on the ground using a camera and image processing.
-- **Object Detection**: The robot uses Aruco markers and OpenCV to detect and track objects (e.g., patients, beds, and medical equipment) in its vicinity.
+- **Object Detection**: The robot uses Aruco markers and OpenCV to detect and track objects in its vicinity.
 - **Smart Curtain Control**: Adjusts room lighting and curtains based on environmental conditions.
 - **Voice Assistant**: Interacts with patients by asking health-related questions.
 ---
@@ -120,21 +120,23 @@ Click [here](https://github.com/Abyaneh/Smart_Hospital/blob/main/Robotic%20movie
    ```bash
    git clone https://github.com/Abyaneh/Smart_Hospital
    ```
-2. change the directory to code folder cd code
-
-3. Ensure the robot is connected to your computer or microcontroller before running the code.
-4. run the main script:
+2. change the directory to the code folder:
+   ```bash
+   cd Smart_Hospital/code
+   ```
+4. Ensure the robot is connected to your computer or microcontroller before running the code.
+5. run the main script:
    ```bash
    python main.py
    ```
 
 [Back to Top](#table-of-contents)
 ## Team Members
-- **Image Processing Group:** Mohammad Maleki Abyaneh, Aghazadeh, Elmi, Ghaffarzadeh, Sharifi
-- **Curtain and Smart Light Group:** Faraji, Gol Nabi
-- **Chassis Design Group:** Rahi Sharafi, Nalbandian
-- **Voice Assistant Group:** Pdash and Ershad
-- **Motor Team:** Padash, Samieinia
+- **Image Processing Group (my group)** 
+- **Curtain and Smart Light Group** 
+- **Chassis Design Group**
+- **Voice Assistant Group**
+- **Motor Team** 
 
 
 ![Image Processing Group](https://github.com/Abyaneh/Smart_Hospital/blob/main/Robotic%20movie%20and%20photos/Image%20Processing%20Group.png)
